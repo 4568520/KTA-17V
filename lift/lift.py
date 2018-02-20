@@ -14,17 +14,28 @@ class StageButton:
 
 
 theCabin = Cabine()#Object CROMIUM DEATH IS CREATED
-print(theCabin.status)
+#print(theCabin.status)
 
 N=78 #Floors OF DEATH HOROR AND CULTS OF OLD ONE'S
 CabinButtons = []
-StageButtons = []
+upButtons = []
+downButtons = []
 i=0
 while i<=N:
     newButton=CabineButton()
     newButton.stage = i
     CabinButtons.append(newButton)
-    print(CabinButtons[i].stage)
+    #print(CabinButtons[i].stage)
     i+=1
-
-
+i=0
+while i<=N:
+    newButton=StageButton()
+    if i!=N:
+        newButton.stage = i
+        newButton.direction = 1
+        upButtons.append(newButton)
+    if i>1:
+        newButton.stage = i
+        newButton.direction = -1
+        downButtons.append(newButton)
+    i+=1
