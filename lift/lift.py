@@ -39,3 +39,19 @@ while i<=N:
         newButton.direction = -1
         downButtons.append(newButton)
     i+=1
+def Call(place,stage,direction=0):
+    #plase is c or s
+    #stage is stage lala lala la
+    #direction 0 if from the inside of lifting cabin sir
+    if place == 'c':
+        #CabinButtons[stage].status = True
+        print('Cabin internall button summons thea to '+str(stage))
+    if place == 's':
+        if direction==1:
+            dirText=" to Stars"
+        if direction==-1:
+            dirText=' to the Deps Of Hell'
+        print('Floor button summons thea to '+str(stage)+dirText)
+    
+Call("c",4,1)
+Call("s",4,1)
