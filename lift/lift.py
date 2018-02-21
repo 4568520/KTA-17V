@@ -65,7 +65,7 @@ def Call(place,stage,direction=0):
     if place == 'c':
         #CabinButtons[stage].status = True
         print('Cabin internall button summons thea to '+str(stage))
-        for oneButton in CabineButtons:#goes throught all the elements of array
+        for oneButton in CabinButtons:#goes throught all the elements of array
             if oneButton.stage ==stage:
                 oneButton.status=True
 
@@ -76,7 +76,7 @@ def Call(place,stage,direction=0):
             dirText=' to the Deps Of Hell'
         print('Floor button summons thea to '+str(stage)+dirText)
         for oneButton in stageButtons:
-            if oneButton.stage==stage and oneButton.direction==direction
+            if oneButton.stage==stage and oneButton.direction==direction:
                 oneButton.status=True
     MoveIt()  
 
