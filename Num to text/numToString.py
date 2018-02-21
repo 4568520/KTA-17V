@@ -32,9 +32,10 @@ def numToText(number):
         else:
             outPutString = decadesNum[int(numberStr[0]) - 2]+'-'+simpNumbers[int(numberStr[1])]
             return outPutString
-    else:
+    #else:
 
-#def untillHundred():
+
+
 
 
 
